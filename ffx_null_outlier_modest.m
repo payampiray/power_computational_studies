@@ -53,7 +53,7 @@ end
 
 x = 0:(size(ffx, 1)-1);
 y = ffx*100;
-`
+
 % T = array2table([x' y], 'VariableNames', {'Number of outliers', 'Model 1', 'Model 2', 'Model 3'});
 % writetable(T,'source_Fig3.csv');
 
