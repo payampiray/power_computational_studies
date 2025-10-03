@@ -54,6 +54,8 @@ review = load(fullfile('sum', 'review_run.mat')); review = review.review;
 power_main = review.power;
 power_extra_old = review.power_extra;
 power_main = nanmean([power_main, power_extra_old], 2);
+power_main = ceil(power_main*100)/100;
+
 [~, idx] = sort(power_main, 'descend');
 
 [sorted_power] = power(idx);
